@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanpi\Behatch\Tests\Units\Json;
+namespace Behatch\Tests\Units\Json;
 
 use JsonSchema\RefResolver;
 use JsonSchema\Validator;
@@ -13,7 +13,7 @@ class JsonInspector extends \atoum
     {
         $this
             ->given(
-                $json = new \mock\Sanpi\Behatch\Json\Json('{}'),
+                $json = new \mock\Behatch\Json\Json('{}'),
                 $json->getMockController()->read = 'foobar'
             )
             ->and(
@@ -36,7 +36,7 @@ class JsonInspector extends \atoum
     {
         $this
             ->given(
-                $json = new \mock\Sanpi\Behatch\Json\Json('{}'),
+                $json = new \mock\Behatch\Json\Json('{}'),
                 $json->getMockController()->read->throw = new \Exception()
             )
             ->and(
@@ -53,7 +53,7 @@ class JsonInspector extends \atoum
     {
         $this
             ->given(
-                $json = new \mock\Sanpi\Behatch\Json\Json('{}'),
+                $json = new \mock\Behatch\Json\Json('{}'),
                 $json->getMockController()->read = 'foobar'
             )
             ->and(
@@ -76,7 +76,7 @@ class JsonInspector extends \atoum
     {
         $this
             ->given(
-                $json = new \mock\Sanpi\Behatch\Json\Json('{}'),
+                $json = new \mock\Behatch\Json\Json('{}'),
                 $json->getMockController()->read = 'foobar'
             )
             ->and(
@@ -99,8 +99,8 @@ class JsonInspector extends \atoum
     {
         $this
             ->given(
-                $json = new \mock\Sanpi\Behatch\Json\Json('{}'),
-                $schema = new \mock\Sanpi\Behatch\Json\JsonSchema('{}'),
+                $json = new \mock\Behatch\Json\Json('{}'),
+                $schema = new \mock\Behatch\Json\JsonSchema('{}'),
                 $schema->getMockController()->resolve = $schema,
                 $schema->getMockController()->validate = 'foobar',
                 $inspector = $this->newTestedInstance('foo')

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanpi\Behatch\Tests\Units\Json;
+namespace Behatch\Tests\Units\Json;
 
 use Symfony\Component\PropertyAccess\PropertyAccess;
 

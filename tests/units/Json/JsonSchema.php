@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanpi\Behatch\Tests\Units\Json;
+namespace Behatch\Tests\Units\Json;
 
 class JsonSchema extends \atoum
 {
@@ -48,7 +48,7 @@ class JsonSchema extends \atoum
         $this
             ->given(
                 $schema = $this->newTestedInstance('{}'),
-                $json = new \Sanpi\Behatch\Json\Json('{}'),
+                $json = new \Behatch\Json\Json('{}'),
                 $validator = new \mock\JsonSchema\Validator,
                 $validator->getMockController()->check = true
             )
@@ -70,7 +70,7 @@ class JsonSchema extends \atoum
         $this
             ->given(
                 $schema = $this->newTestedInstance('{}'),
-                $json = new \Sanpi\Behatch\Json\Json('{}'),
+                $json = new \Behatch\Json\Json('{}'),
                 $validator = new \mock\JsonSchema\Validator,
                 $validator->getMockController()->check = false,
                 $validator->getMockController()->getErrors = [
