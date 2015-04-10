@@ -2,7 +2,6 @@
 
 namespace Sanpi\Behatch\Context;
 
-use Behat\Behat\Context\Step;
 use Behat\Gherkin\Node\PyStringNode;
 
 class SystemContext extends BaseContext
@@ -13,20 +12,6 @@ class SystemContext extends BaseContext
     public function __construct($root = '.')
     {
         $this->root = $root;
-    }
-
-    /**
-     * Uploads a file using the specified input field
-     *
-     * @When (I )put the file :file into :field
-     */
-    public function putFileIntoField($file, $field)
-    {
-        $path = $this->root . DIRECTORY_SEPARATOR . $file;
-
-        return [
-            new Step\When("I attach the file '$path' to '$field'")
-        ];
     }
 
     /**
