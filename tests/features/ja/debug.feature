@@ -5,9 +5,9 @@
     @user
     シナリオ: Testing a break point
        前提 "/index.html" を表示している
-        ならば 私がブレークポイントを設置する
+        #ならば 私がブレークポイントを設置する
         ならば　画面に "Congratulations, you've correctly set up your apache environment." と表示されていること
-        ならば ブレークポイントを設置する
+        #ならば ブレークポイントを設置する
 
     @javascript
     シナリオ: Taking a screenshot
