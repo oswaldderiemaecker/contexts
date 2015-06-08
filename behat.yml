@@ -20,5 +20,6 @@ default:
             base_url: 'http://localhost'
             files_path: 'tests/fixtures/files'
             goutte: ~
-            selenium2: ~
+            selenium2: 
+                capabilities: {"browserName":"chrome", "platform":"LINUX", "browserVersion":"9", "version": "", "browser": "chrome"}
         Sanpi\Behatch\Extension: ~
