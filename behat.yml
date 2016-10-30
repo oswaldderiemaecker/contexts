@@ -17,10 +17,11 @@ default:
                 - behatch:xml
     extensions:
         Behat\MinkExtension:
-            base_url: http://localhost/
+            base_url: http://application
             files_path: tests/fixtures/files
             browser_name: chrome  
             goutte: ~
             selenium2: 
-                capabilities: {"browserName":"chrome", "platform":"LINUX", "browserVersion":"9", "version": "", "browser": "chrome"}
+                wd_host: http://selenium:4444/wd/hu
+                #capabilities: {"browserName":"chrome", "platform":"LINUX", "browserVersion":"9", "version": "", "browser": "chrome"}
         Sanpi\Behatch\Extension: ~
