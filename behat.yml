@@ -23,5 +23,5 @@ default:
             goutte: ~
             selenium2: 
                 wd_host: http://selenium:4444/wd/hu
-                #capabilities: {"browserName":"chrome", "platform":"LINUX", "browserVersion":"9", "version": "", "browser": "chrome"}
+                capabilities: {"browserName":"chrome", "platform":"LINUX", "browserVersion":"9", "version": "", "browser": "chrome"}
         Sanpi\Behatch\Extension: ~
