@@ -17,7 +17,7 @@ default:
                 - behatch:xml
     extensions:
         Behat\MinkExtension:
-            base_url: http://application
+            base_url: http://apache24
             files_path: tests/fixtures/files
             browser_name: chrome  
             goutte: ~
